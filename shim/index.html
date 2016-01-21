@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shim</title>
+	<script data-main="main.js" src="lib/require.min.js"></script>
+	<script>
+		var $E = "_before_";
+		
+		function test(){
+			StringUtils.toUpperCase();
+		}
+	</script>
+</head>
+<body>
+	<div id="div1" style="width:200px;height:200px;background-color:#465ae0;" onclick="test();"></div>
+</body>
+</html>
